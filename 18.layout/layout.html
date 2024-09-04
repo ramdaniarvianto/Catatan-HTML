@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Ramdani Arvianto">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Layout</title>
+    <style>
+        * {
+            font-family: 'Montserrat';
+            box-sizing: border-box;
+        }
+        
+        header {
+            background-color: tomato;
+            padding: 30px;
+            text-align: center;
+            color: white;
+        }
+
+        nav {
+            float: left;
+            width: 30%;
+            height: 350px;
+            background-color: teal;
+            padding: 30px;
+        }
+        ul, li, a {
+            color: white;
+            text-decoration: none;
+        }
+        li:hover, a:hover {
+            font-weight: bold;
+            color: rgb(4, 255, 255);
+        }
+
+        article {
+            float: left;
+            width: 70%;
+            height: 350px;
+            background-color: green;
+            padding: 30px;
+        }
+        h2 {
+            color: white;
+        }
+        p {
+            color: rgb(210, 210, 210);
+        }
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        footer {
+            background-color: burlywood;
+            padding: 30px;
+            text-align: center;
+            color: white;
+        }
+
+        @media (max-width: 800px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">Nav 1</a></li>
+                <li><a href="#">Nav 2</a></li>
+                <li><a href="#">Nav 3</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h2>Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto qui fuga quibusdam odit cumque quidem quis itaque aspernatur. Error beatae iusto earum quis in possimus cupiditate at quam, repudiandae ad.</p>
+            <h2>Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime illo in numquam harum dolores laborum adipisci rerum odit aliquam explicabo temporibus eos voluptatem ipsa ad magnam, voluptas architecto sit saepe.</p>
+        </article>
+    </section>
+
+    <footer><h2>Footer</h2></footer>
+</body>
+</html>

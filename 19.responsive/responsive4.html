@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Ramdani Arvianto">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Responsive</title>
+    <style>
+        * {
+            font-family: 'Montserrat';
+            box-sizing: border-box;
+        }
+
+        .header {
+            background-color: rosybrown;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .colom1, .colom2, .colom3, .colom4 {
+            float: left;
+            padding: 10px;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        h2 {
+            color: rosybrown;
+        }
+
+        .colom1 {
+            width: 30%;
+        }
+
+        .colom2 {
+            width: 40%;
+        }
+
+        .colom3 {
+            width: 30%;
+        }
+
+        @media screen and (max-width:800px) {
+            .colom1, .colom2, .colom3 {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Ramdani Arvianto</h1>
+        <p>Responsive page</p>
+    </div>
+
+    <div class="container">
+        <div class="colom1">
+            <h2>Colom 1</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, dolore?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, sint?</p>
+        </div>
+        <div class="colom2">
+            <h2>Colom 2</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, libero?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, enim?</p>
+        </div>
+        <div class="colom3">
+            <h2>Colom 3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, veritatis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, quod.</p>
+        </div>
+    </div>
+</body>
+</html>

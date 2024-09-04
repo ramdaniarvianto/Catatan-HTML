@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Ramdani Arvianto">
+    <title>Form Input</title>
+</head>
+<body>
+    <form action="">
+        <fieldset style="width: 10px;">
+            <legend>Form</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="search">Search</label>
+                    </td>
+                    <td>
+                        <input type="search" required id="search" name="search" placeholder="Search">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="username">Text</label>
+                    </td>
+                    <td>
+                        <input type="text" required id="username" name="username" placeholder="Username">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">Password</label>
+                    </td>
+                    <td>
+                        <input type="password" required id="password" name="password" placeholder="Password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email</label>
+                    </td>
+                    <td>
+                        <input type="email" required id="email" name="email" placeholder="Email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="checkbox">Checkbox</label>
+                    </td>
+                    <td>
+                        <label for="checkbox"><input type="checkbox" value="coding">Coding</label>
+                        <label for="checkbox"><input type="checkbox" value="tidur">Tidur</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="kelamin">Radio</label>
+                    </td>
+                    <td>
+                        <label for="kelamin"><input type="radio" required id="kelamin" name="kelamin" value="pria">Pria</label>
+                        <label for="kelamin"><input type="radio" required id="kelamin" name="kelamin" value="wanita">Wanita</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="prodi">Datalist</label>
+                    </td>
+                    <td>
+                        <input list="prodi" required name="prodi" placeholder="Prodi">
+                        <datalist id="prodi">
+                            <option value="TI">Teknik Informatika</option>
+                            <option value="SI">Sistem Informasi</option>
+                            <option value="BD">Bisnis Digital</option>
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="negara">Option</label>
+                    </td>
+                    <td>
+                        <select name="negara" id="negara" style="width: 170px;">
+                            <optgroup label="Asia">
+                                <option value="Indonesia">Indonesia</option>
+                                <option value="Malaysia">Malaysia</option>
+                                <option value="Thailand">Thailand</option>
+                            </optgroup>
+                            <optgroup label="America">
+                                <option value="United States">United States</option>
+                                <option value="Canada">Canada</option>
+                                <option value="Mexico">Mexico</option>
+                            </optgroup>
+                            <optgroup label="Europe">
+                                <option value="Germany">Germany</option>
+                                <option value="France">France</option>
+                                <option value="Spain">Spain</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="website">URL</label>
+                    </td>
+                    <td>
+                        <input type="url" required id="website" name="website" placeholder="Website">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="umur">Number</label>
+                    </td>
+                    <td>
+                        <input type="number" required id="umur" name="umur" placeholder="Umur" min="10" max="70" style="width: 162px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="range">Range</label>
+                    </td>
+                    <td>
+                        <input type="range" id="range" name="range" style="width: 169px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="file">File</label>
+                    </td>
+                    <td>
+                        <input type="file" id="file" name="file">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="tel">Tel</label>
+                    </td>
+                    <td>
+                        <input type="tel" required id="tel" name="tel" placeholder="Telephone">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="datemin">Date</label>
+                    </td>
+                    <td>
+                        <input type="date" name="datemin" id="datemin" min="2000-01-02" style="width: 165px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="time">Time</label>
+                    </td>
+                    <td>
+                        <input type="time" id="time" name="time" style="width: 165px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="datetime">DateTime</label>
+                    </td>
+                    <td>
+                        <input type="datetime-local" required name="birthday" id="birthday" style="width: 165px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="details">Details</label>
+                    </td>
+                    <td>
+                        <details>
+                            <summary>Social Media</summary>
+                            <p >TikTok: @ramdaniarvianto</p>
+                        </details>
+                    </td>
+                </tr>   
+                <tr>
+                    <td>
+                        <label for="textarea">Textarea</label>
+                    </td>
+                    <td>
+                        <textarea name="textarea" id="textarea" placeholder="Feedback" style="resize: none; width: 164px;"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="kirim">Button</label>
+                    </td>
+                    <td>
+                        <button id="kirim" name="kirim" style="width: 170px;">Kirim</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="submit">Submit</label>
+                    </td>
+                    <td>
+                        <input type="submit" id="submit" name="submit" style="width: 170px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="reset">Reset</label>
+                    </td>
+                    <td>
+                        <input type="reset" id="reset" name="reset" style="width: 170px;">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Ramdani Arvianto">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Responsive</title>
+    <style>
+        * {
+            font-family: 'Montserrat';
+            box-sizing: border-box;
+        }
+
+        .left, .main, .right {
+            float: left;
+            text-align: center;
+        }
+
+        .left {
+            width: 20%;
+            padding: 20px;
+            background-color: aqua;
+        }
+
+        .main {
+            width: 60%;
+            padding: 20px;
+            background-color: aquamarine;
+        }
+
+        .right {
+            width: 20%;
+            padding: 20px;
+            background-color: darkturquoise;
+        }
+
+        @media screen and (max-width:500px) {
+            .left, .main, .right {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="left">
+        <p>Left</p>
+    </div>
+
+    <div class="main">
+        <p>Main</p>
+    </div>
+
+    <div class="right">
+        <p>Right</p>
+    </div>
+</body>
+</html>
