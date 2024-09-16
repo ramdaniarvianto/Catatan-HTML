@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <!-- 
+    <table></table>
+    Elemen ini digunakan untuk membuat tabel dalam HTML. Di dalam elemen table, biasanya terdapat elemen-elemen seperti thead, tbody, tfoot, tr, th, dan td.
+
+    <thead></thead> | Table Header
+    Elemen ini digunakan untuk membungkus bagian header dari tabel, yang biasanya berisi judul kolom. Biasanya di dalam thead terdapat satu atau lebih elemen tr dan th.
+
+    <tbody></tbody> | Table Body
+    Digunakan untuk membungkus bagian isi tabel yang berisi data. Di dalam tbody biasanya terdapat satu atau lebih elemen tr yang berisi td.
+
+    <tfoot></tfoot> | Table Footer
+    Elemen ini digunakan untuk membungkus bagian footer dari tabel. Biasanya di dalam tfoot terdapat satu atau lebih elemen tr yang berisi td atau th.
+
+    <tr></tr> | Table Row
+    Elemen ini digunakan untuk mendefinisikan baris dalam tabel. tr bisa digunakan di dalam thead, tbody, dan tfoot.
+
+    <th></th> | Table Header Cell
+    Digunakan untuk mendefinisikan sel header dalam tabel. Biasanya berada di dalam elemen thead atau bisa juga di tfoot dan tr jika ingin menampilkan header di bagian bawah.
+
+    <td></td> | Table Data Cell
+    Digunakan untuk mendefinisikan sel data dalam tabel. Elemen ini digunakan di dalam elemen tr yang ada di dalam tbody atau tfoot.
+
+    <caption></caption>
+    Menambahkan keterangan atau judul untuk tabel. Biasanya diletakkan langsung setelah elemen table.
+
+    colspan=""
+    Atribut ini digunakan pada elemen td atau th untuk menentukan seberapa banyak kolom yang harus digabungkan dalam tabel.
+
+    rowspan=""
+    Atribut ini digunakan pada elemen td atau th untuk menentukan seberapa banyak baris yang harus digabungkan dalam tabel.
+
+    <colgroup></colgroup>
+    Mengelompokkan kolom-kolom di tabel sehingga kita bisa menerapkan gaya atau atribut pada beberapa kolom sekaligus. Biasanya digunakan untuk styling yang konsisten di seluruh kolom yang dikelompokkan.
+
+    <col>
+    Menerapkan gaya atau atribut pada kolom tertentu di dalam colgroup.
+    -->
+    
+    <table border="1">
+        <caption>Daftar Mahasiswa</caption>
+        <colgroup>
+            <col style="background-color: #EEE;">
+            <col style="background-color: #AAA;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Prodi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ramdani Arvianto</td>
+                <td>Teknik Informatika</td>
+            </tr>
+            <tr>
+                <tr>
+                    <td>Ramdani Arvianto</td>
+                    <td>Teknik Informatika</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Ramdani Arvianto</td>
+                    <td>Teknik Informatika</td>
+                </tr>
+                <tr>
+                    <td>Teknik Informatika</td>
+                </tr>
+            </tr>
+                <td>Ramdani Arvianto</td>
+                <td>Teknik Informatika</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total Mahasiswa: 5</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
